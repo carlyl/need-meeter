@@ -48,9 +48,9 @@ m.route(document.getElementById('app'), '/', {
 
       return m('.app', [
         m('h1', 'Need Meeter'),
-        m.component(MyComponent, { title: 'Find out if all your needs met!' }),
-        m('p', ctrl.score),
-        m('p', ctrl.percentOfNeedsMet),
+        m.component(MyComponent, { title: ctrl.percentOfNeedsMet + ' of your needs are met!' }),
+        // m('p', ctrl.score),
+        // m('p', ctrl.percentOfNeedsMet),
         // m("button", "Get Started"),
         // m("br"),
         m('div', 
@@ -73,14 +73,21 @@ m.route(document.getElementById('app'), '/', {
                     m("label", ""),
                     m("input[name=score]", {
 
-                       
-                        onblur:function(x){
-                          // return tempStorage.score = x.currentTarget.value
-                          var thisValue = x.currentTarget.value
-                          ctrl.score += Number(x.currentTarget.value);
+                        onmousedown: function(e){
+                          var curValue = Number(e.currentTarget.value)
+                          ctrl.score -= curValue
+
+
+                        },
+                        onmouseup:function(e){
+                          // return tempStorage.score = e.currentTarget.value
+                          var thisValue = e.currentTarget.value
+
+                          ctrl.score += Number(e.currentTarget.value);
                           console.log(thisValue)
+                          console.log()
                           var percOfNeedsMet = Number(ctrl.score/ctrl.totalPossible)
-                          ctrl.percentOfNeedsMet = numeral(percOfNeedsMet).format('0.000%')
+                          ctrl.percentOfNeedsMet = numeral(percOfNeedsMet).format('0.0%')
 
                           },
                         type:"range", 
@@ -91,7 +98,6 @@ m.route(document.getElementById('app'), '/', {
                         style: {width: "40px"}
 
                       }),
-                     // m("label", " totally agree")
 
 
                 ]) 
