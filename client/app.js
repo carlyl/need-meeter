@@ -53,7 +53,7 @@ m.route(document.getElementById('app'), '/', {
         // m('p', ctrl.percentOfNeedsMet),
         // m("button", "Get Started"),
         // m("br"),
-        m('div', 
+        m('div', {class: "container"},
           m('form', ""),
 
           surveyQuestions.map(function(question, index){
