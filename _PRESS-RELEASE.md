@@ -24,15 +24,24 @@ Once the project moves into development, the press release can be used as a touc
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
 
+  Anyone interested in knowing exactly how many basic human needs they're currently meeting and which ones they're missing.
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
+  Need Meeter helps people understand the current state of their basic human needs and identify and missing needs and there relative importance to they can better estimate whether 
+
 ## Problem ##
   > Describe the problem your product solves.
 
+  > When it comes to our personal well-being it's not always easy to tell the difference between basic human 'needs' and 'wants'. While in reality there is a critical difference between the two, in practice they often overlap and are difficult to distinguish from one another. 
+
+  People sometimes look outward to physical items to solve personal problems when more For example I may tell myself my one-bedroom apartment is too small and I need  be hard to tell the difference. It's  something because it is fundamental to our ultimate survival or well-being an 
+
 ## Solution ##
   > Describe how your product elegantly solves the problem.
+
+  Determine whether you actually need something to improve your well-being or your basic needs are already met. 
 
 ## Quote from You ##
   > A quote from a spokesperson in your company.
@@ -40,8 +49,13 @@ Once the project moves into development, the press release can be used as a touc
 ## How to Get Started ##
   > Describe how easy it is to get started.
 
+  ## Head over to the app and start answering our questionaire to get started. ##
+
+
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+
+  "I didn't realize how important 
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.

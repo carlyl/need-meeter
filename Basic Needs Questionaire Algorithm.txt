@@ -1,0 +1,19 @@
+Basic Needs Questionaire Algorithm    Lowest Possible Highest Possible
+SECTION|SECTION LABEL|QUESTION|LOWEST POSSIBLE|HIGHEST POSSIBLE      
+(1)|"Protection from the Elements"|"I have a permanent safe place to live."|1|10
+(1)|"Protection from the Elements"|"I always have enough food to eat at least 3 meals a day. "|1|10
+(1)|"Protection from the Elements"|"I always have enough clean water to drink. "|1|10
+(1)|"Protection from the Elements"|"I always have plenty of clean clothing to wear."|1|10
+(1)|"Protection from the Elements"|"I always have enough money to pay for my housing|food|water|and clothing. "|1|10
+(2)|"Safety"|"I always feel physically safe from danger in my own home."|1|10
+(2)|"Safety"|"I always feel loved and emotionally supported in my own home."|1|10
+(2)|"Safety"|"I always have access to mental and physical healthcare if something goes wrong."|1|10
+(2)|"Safety"|"I feel that I can recover from most healthcare problems. "|1|10
+(2)|"Safety"|"I feel confident in my ability to access healthcare services in the future."|1|10
+(3)|"Friendship and Family"|"I have someone I trust whom I can tell anything. "|1|10
+(3)|"Friendship and Family"|"I know I always have a place to go where I feel like I belong. "|1|10
+(3)|"Friendship and Family"|"I know I have people I can talk to that genuinely care about me. "|1|10
+(3)|"Friendship and Family"|"I always feel free to be myself in my own home."|1|10
+(4)|"Know Yourself"|"I typically feel empowered to be myself. "|1|10
+(4)|"Know Yourself"|"I typically feel confident that the decisions I make are right for me. "|1|10
+(4)|"Know Yourself"|"I feel confident tht my life has meaning to me."|1|10
