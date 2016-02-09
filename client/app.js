@@ -6,6 +6,8 @@ var MyComponent = require('./components/MyComponent')
 //
 window.App = {}
 
+var test = "oh hey thaar";
+
 //
 // Client-side routing
 //
@@ -13,89 +15,50 @@ m.route.mode = 'pathname'
 m.route(document.getElementById('app'), '/', {
 
   '/': {
-    // Controllers are optional
-    // Select = {
 
-    //   controller: function (data) {
+    controller: function() {
 
-    //       this.value = m.prop(data.value);
-    //       this.options = data.options || {};
-    //       return this;
-    //   },
+     this.surveyQuestions = [   
+      {group: 1, category: "Protection from the Elements", question: "I have a permanent place to live.", highest: 10, lowest:0},
+      {group: 1, category: "Protection from the Elements", question: "I always have enough food to eat at least 3 meals a day.", highest: 10, lowest:0},
+      {group: 1, category: "Protection from the Elements", question: "I always have enough clean water to drink.", highest: 10, lowest:0},
+      {group: 1, category: "Protection from the Elements", question: "I always have plenty of clean clothing to wear.", highest: 10, lowest:0},
+      {group: 1, category: "Protection from the Elements", question: "I always have enough money to pay for my housing, food, water, and clothing.", highest: 10, lowest:0},
+      {group: 2, category: "Safety", question: "I always feel physically safe from danger in my own home.", highest: 10, lowest:0},
+      {group: 2, category: "Safety", question: "I always feel loved and emotionally supported in my own home.", highest: 10, lowest:0},
+      {group: 2, category: "Safety", question: "I always have access to mental and physical healthcare if something goes wrong.", highest: 10, lowest:0},
+      {group: 2, category: "Safety", question: "I feel that I can recover from most healthcare problems.", highest: 10, lowest:0},
+      {group: 2, category: "Safety", question: "I feel confident in my ability to access healthcare services in the future.", highest: 10, lowest:0},
+      {group: 3, category: "Friendship and Family", question: "I have someone I trust whom I can tell anything.", highest: 10, lowest:0},
+      {group: 3, category: "Friendship and Family", question: "I know I always have a place to go where I feel like I belong.", highest: 10, lowest:0},
+      {group: 3, category: "Friendship and Family", question: "I know I have people I can talk to that genuinely care about me.", highest: 10, lowest:0},
+      {group: 3, category: "Friendship and Family", question: "I always feel free to be myself in my own home.", highest: 10, lowest:0},
+      {group: 4, category: "Know Yourself", question: "I typically feel empowered to be myself.", highest: 10, lowest:0},
+      {group: 4, category: "Know Yourself", question: "I typically feel confident that the decisions I make are right for me.", highest: 10, lowest:0},
+      {group: 4, category: "Know Yourself", question: "I feel confident tht my life has meaning to me.", highest: 10, lowest:0}
+    ]
 
-    
+    },
+  
 
     view: function (ctrl) {
 
+      console.log(test);
+      console.log(ctrl.surveyQuestions)
       return m('.app', [
-        m('h1', 'Node Catapult'),
-        m.component(MyComponent, { title: 'Welcome to my app!' }),
-        m("label", "Do you have a place to sleep?"),
-        m("input", {type: "checkbox"}, "housing"),
+        m('h1', 'Need Meeter'),
+        m.component(MyComponent, { title: 'Find out if all your needs met!' }),
         m("br"),
+        m('div', 
 
-        m("select", [
-          m("option", {value: 01}, "Alabama"),
-          m("option", {value: 02}, "Alaska"),
-          m("option", {value: 04}, "Arizona"),
-          m("option", {value: 05}, "Arkansas"),
-          m("option", {value: 06}, "California"),
-          // m("option", {value: 08}, "Colorado"),
-// m("option", {value: 08}, "Colorado"),
-// m("option", {value: 09}, "Connecticut"),
-
-          m("option", {value: 10}, "Delaware"),
-          m("option", {value: 11}, "DC"),
-          m("option", {value: 12}, "Florida"),
-          m("option", {value: 13}, "Georgia"),
-          m("option", {value: 15}, "Hawaii"),
-          m("option", {value: 16}, "Idaho"),
-          m("option", {value: 17}, "Illinois"),
-          m("option", {value: 18}, "Indiana"),
-          m("option", {value: 19}, "Iowa"),
-          m("option", {value: 20}, "Kansas"),
-          m("option", {value: 21}, "Kentucky"),
-          m("option", {value: 22}, "Louisiana"),
-          m("option", {value: 23}, "Maine"),
-          m("option", {value: 24}, "Maryland"),
-          m("option", {value: 25}, "Massachusetts"),
-          m("option", {value: 26}, "Michigan"),
-          m("option", {value: 27}, "Minnesota"),
-          m("option", {value: 28}, "Mississippi"),
-          m("option", {value: 29}, "Missouri"),
-          m("option", {value: 30}, "Montana"),
-          m("option", {value: 31}, "Nebraska"),
-          m("option", {value: 32}, "Nevada"),
-          m("option", {value: 33}, "New Hampshire"),
-          m("option", {value: 34}, "New Jersey"),
-          m("option", {value: 35}, "New Mexico"),
-          m("option", {value: 36}, "New York"),
-          m("option", {value: 37}, "North Carolina"),
-          m("option", {value: 38}, "North Dakota"),
-          m("option", {value: 39}, "Ohio"),
-          m("option", {value: 40}, "Oklahoma"),
-          m("option", {value: 41}, "Oregon"),
-          m("option", {value: 42}, "Pennsylvania"),
-          m("option", {value: 44}, "Rhode Island"),
-          m("option", {value: 45}, "South Carolina"),
-          m("option", {value: 46}, "South Dakota"),
-          m("option", {value: 47}, "Tennessee"),
-          m("option", {value: 48}, "Texas"),
-          m("option", {value: 49}, "Utah"),
-          m("option", {value: 50}, "Vermont"),
-          m("option", {value: 51}, "Virginia"),
-          m("option", {value: 53}, "Washington"),
-          m("option", {value: 54}, "West Virginia"),
-          m("option", {value: 55}, "Wisconsin"),
-          m("option", {value: 56}, "Wyoming"),
-
-          '']
-         
-
-          ),
-        m('button','Submit')
-      ])
+           ctrl.surveyQuestions.map(function(x){
+              return m("p", x.question);
+            })
+          )
+        ])
     }
+    
   }
 
 })
+
