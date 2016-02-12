@@ -7,21 +7,21 @@ window.App = {}
 
 var surveyQuestions = [   
   {group: 1, category: "Protection from the Elements", question: "I have a permanent place to live.", score:0},
-  {group: 1, category: "Protection from the Elements", question: "I always have enough food to eat at least 3 meals a day.", score:0},
+  {group: 1, category: "Protection from the Elements", question: "I always have enough food to eat everyday.", score:0},
   {group: 1, category: "Protection from the Elements", question: "I always have enough clean water to drink.", score:0},
   {group: 1, category: "Protection from the Elements", question: "I always have plenty of clean clothing to wear.", score:0},
-  {group: 1, category: "Protection from the Elements", question: "I always have enough money to pay for my housing, food, water, and clothing.", score:0},
+  {group: 1, category: "Protection from the Elements", question: "I have enough money to pay for my housing, food, water, and clothing.", score:0},
   {group: 2, category: "Safety", question: "I always feel safe from danger in my own home.", score:0},
-  {group: 2, category: "Safety", question: "I always feel loved and emotionally supported in my own home.", score:0},
-  {group: 2, category: "Safety", question: "I always have access to mental and physical healthcare if something goes wrong.", score:0},
-  {group: 2, category: "Safety", question: "I feel that I can recover from most healthcare problems.", score:0},
-  {group: 2, category: "Safety", question: "I feel confident in my ability to access healthcare services in the future.", score:0},
-  {group: 3, category: "Friendship and Family", question: "I have someone I trust whom I can tell anything.", score:0},
-  {group: 3, category: "Friendship and Family", question: "I know I always have a place to go where I feel like I belong.", score:0},
-  {group: 3, category: "Friendship and Family", question: "I know I have people I can talk to that genuinely care about me.", score:0},
+  {group: 2, category: "Safety", question: "I always feel loved and supported in my own home.", score:0},
+  // {group: 2, category: "Safety", question: "I have access to mental and physical healthcare if something goes wrong.", score:0},
+  {group: 2, category: "Safety", question: "I feel confident I can recover from most healthcare problems.", score:0},
+  // {group: 2, category: "Safety", question: "I feel confident in my ability to access healthcare services in the future.", score:0},
+  // {group: 3, category: "Friendship and Family", question: "I alwayshave someone I trust whom I can tell anything.", score:0},
+  {group: 3, category: "Friendship and Family", question: "I always have a place to go where I feel like I belong.", score:0},
+  {group: 3, category: "Friendship and Family", question: "I have people I can talk to that genuinely care about me.", score:0},
   {group: 3, category: "Friendship and Family", question: "I always feel free to be myself in my own home.", score:0},
-  {group: 4, category: "Know Yourself", question: "I typically feel empowered to be myself.", score:0},
-  {group: 4, category: "Know Yourself", question: "I typically feel confident that the decisions I make are right for me.", score:0},
+  // {group: 4, category: "Know Yourself", question: "I typically feel empowered to be myself.", score:0},
+  {group: 4, category: "Know Yourself", question: "I feel confident that the decisions I make are right for me.", score:0},
   {group: 4, category: "Know Yourself", question: "I feel confident tht my life has meaning to me.", score:0}
 ]
 
@@ -38,7 +38,7 @@ m.route(document.getElementById('app'), '/', {
     controller : function() {
       var ctrl = this;
       ctrl.score = 0;
-      ctrl.totalPossible = 170;
+      ctrl.totalPossible = 130;
       ctrl.percentOfNeedsMet = 0;
       // ctrl.totalScore =0;
     },
